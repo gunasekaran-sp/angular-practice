@@ -1,0 +1,10 @@
+.warning {
+    width: 300px;
+    padding: 10px 0;
+    margin: 10px;
+    vertical-align: middle;
+    text-align: center;
+    border: 3px solid rgb(182, 182, 8);
+    background-color: yellow;
+    color: rgba(78, 78, 0, 0.966);
+}
