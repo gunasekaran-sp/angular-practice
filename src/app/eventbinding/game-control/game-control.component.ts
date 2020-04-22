@@ -2,8 +2,7 @@ import { Component, Output, EventEmitter } from '@angular/core'
 
 @Component({
     selector: 'app-game-control',
-    templateUrl: './game-control.component.html',
-    styleUrls: ['./game-control.component.css']
+    templateUrl: './game-control.component.html'
   })
   export class GameControlComponent {
       @Output("gameNumber") numberEvent: EventEmitter<number> = new EventEmitter();

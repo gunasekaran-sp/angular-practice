@@ -12,6 +12,11 @@ import { EventBindingComponent } from './eventbinding/eventbinding.component';
 import { GameControlComponent } from './eventbinding/game-control/game-control.component';
 import { OddComponent } from './eventbinding/odd/odd.component';
 import { EvenComponent } from './eventbinding/even/even.component';
+import { ServicesComponent } from './services/services.component';
+import { ActiveUsersComponent } from './services/active-users/active-users.component';
+import { InactiveUsersComponent } from './services/inactive-users/inactive-users.component';
+import { UsersService } from './services/users.service';
+import { CountService } from './services/count.service';
 
 @NgModule({
   declarations: [
@@ -23,13 +28,16 @@ import { EvenComponent } from './eventbinding/even/even.component';
     EventBindingComponent,
     GameControlComponent,
     OddComponent,
-    EvenComponent
+    EvenComponent,
+    ServicesComponent,
+    ActiveUsersComponent,
+    InactiveUsersComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [UsersService, CountService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
